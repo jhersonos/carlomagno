@@ -96,6 +96,9 @@ header.active .menu > li > a{
 	text-transform: uppercase;
 	font-weight: bold;
 }
+.menu li{
+	text-transform: uppercase;
+}
 .menu li:hover .submenu{
 	display: block;
 	visibility: visible;
@@ -201,45 +204,76 @@ margin:8%;
 #line h1,h2{
 	font-size: 30px;
 }
-.formulario{
+.clase1{
 background-image: url(../img/banner2.jpg);
 width: 100%;
 height: 100%;
-padding-top: 13%; 
+padding-top: 4%; 
 background-size: cover;		
+position:relative;
+text-align: center;
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+
 }
-.formulario h1{
+.clase1 h1 p{
 	 font-size:80px;
 	 font-family:"palace script mt" ;
 	 text-align: center;
 	 color: #ffff;	
 }
-.formulario:before{
+.clase1:before{
 	content:'';
-	opacity:0.3;
-	background-color: #F1B83D;
+	opacity:0.5;
+	background-color: #000;
 	position: absolute;
 	width: 100%;
-	height:95%;
+	height:100%;
 	z-index: 1;
 	top: 0; 
 	left:0;
 }
-.formulario *{	
+.clase1 *{	
 	position: relative; /*siempre tiene que llevar positon si quieres utilizar z-index*/
 	z-index: 3;
 }
-.form-group{
-	margin-left: 35%;
-	margin-right: 35%; 
+.btn{
+	margin-bottom: 50px;
+    margin-top: 15px;
 }
-#cont img{
-	width: 50%;
+.layer{
+  margin:auto;
+  max-width: 850px;
+  padding-top:70px ;
+
 }
-.boton{
-	margin-top: 50px;
-	padding-bottom: 49px;
-    margin-left: 25%;
+#home_contactos{
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
+.pd_20{
+	margin-bottom: 170px;
+
+}
+.pd_20 h1{
+	padding-bottom: 10px;
+}
+.text  h2{
+	padding-left: 180px;
+
+}
+form {
+	max-width: 500px;
+	margin: auto;
+}
+
+.btn2{
+	margin-bottom: 25px;
+	margin-top: 15px;
+	margin-left: 200px;	
 }
 #cont h1{
 	text-align: center;
