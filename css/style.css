@@ -347,26 +347,31 @@ margin-left: 50px;
 	padding-bottom: 50px;
 	padding-top: 50px;
 }
+#home_contactos .btn{
+	background-color: #d25b3b;
+	border-color: #d25b3b;
+	margin-top: 30px;
+}
 .pd_20{
 	margin-bottom: 170px;
-
 }
 .pd_20 h1{
 	padding-bottom: 10px;
 }
-.text  h2{
-	padding-left: 180px;
-
+.text h2{
+	padding-left: 0;
 }
 form {
 	max-width: 500px;
 	margin: auto;
 }
-
 .btn2{
 	margin-bottom: 25px;
 	margin-top: 15px;
-	margin-left: 200px;	
+    margin-left: auto;
+    display: block;
+    width: fit-content;
+    margin-right: auto;	
 }
 #cont h1{
 	text-align: center;
