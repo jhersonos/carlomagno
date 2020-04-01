@@ -311,6 +311,7 @@ max-width: 800px;
 	}
 .cent h1 p{
 text-align: center;
+padding:50px;
 }
 #serv{
 padding-top:50px ;
@@ -472,9 +473,43 @@ form {
 .list ul li span{
 	color:#000;
 }
+.menu li:first-child{
+	display:none;
+}
 @media(max-width:468px){
+	.layer h1 p{
+		padding:0 100px;	
+	}
+	.mx_w img{
+		margin-left:80px;
+	}
+	.cent{
+		padding: 0 20px;
+	}
 	.menu{
-		display:none;
+		display:block;
+	}
+	.menu li:first-child{
+		display:block;
+		max-height: 100px;
+	}
+	
+	.menu li:first-child img{
+		max-width: 24px;
+	}
+	.menu li{
+		display: block;
+		background-color: #fff;
+		max-height: 0;
+		overflow: hidden;		
+		transition: max-height .5s;
+	}
+	.menu.active li{
+		max-height: 100px;
+		transition: max-height .5s;
+	}
+	.menu li a{
+		color:#000;
 	}
 	.bgHome h2{
 		padding:0 20px;

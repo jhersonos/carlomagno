@@ -49,4 +49,8 @@ $(window).ready(function(){
       });
 
 
+      $(".menu__").click(function(){
+        $(".menu").toggleClass("active")
+      })
+
 })
