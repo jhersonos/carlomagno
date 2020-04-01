@@ -12,6 +12,9 @@ header{
 	transition:all .3s;
 	top:0;
 }
+iframe{
+	max-width:100%;
+}
 header.active{
 	background: #fff;
 }
