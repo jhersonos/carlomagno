@@ -12,8 +12,11 @@ header{
 	transition:all .3s;
 	top:0;
 }
+img{
+	max-width: 100%;
+}
 iframe{
-	max-width:100%;
+	max-width: 100%;
 }
 header.active{
 	background: #fff;
@@ -167,14 +170,24 @@ display: block;
 #texto img{
 	width:100%;
 }	
-#texto ,.row{
+#texto ,.row:not(.no-item-center){
 	align-items: center;
+}
+
+.related{
+	margin-top:20px;
+}
+.related p{
+	font-size: 14px;
+}
+.related img{
+	width: 100%;
 }
 #casa p{
 	color: #CE6809;
 	font-size: 16px;
 }
-#imb h1,h2{
+#imb h1, #imb h2{
 	text-align: center;
 	padding-top: 50px;
 	font-size: 30px;
@@ -291,13 +304,13 @@ color: #fff;
 		top: 0; 
 		left:0;
 	}
-	#m_v *{	
+#m_v *{	
 		position: relative; /*siempre tiene que llevar positon si quieres utilizar z-index*/
 		z-index: 3;}
-#m_v h1,h2{
+#m_v h1, #m_v h2{
 	font-size: 30px;
 }
-#m_v h1,h2{
+#m_v h1, #m_v h2{
 	padding-top: 50px;
 }
 #center{
@@ -308,7 +321,8 @@ margin-left: auto;
 margin-right: auto;
 max-width: 800px;
 	}
-	#center h1{
+#center h1{
+	color: #df7343;
 		margin-top:20px;
 		margin-bottom:25px;
 	}
@@ -322,7 +336,7 @@ padding-bottom: 50px;
 }	
 #serv h1{
 	text-align:center;
-	color:#D87507;
+	color:#df7343;
 	padding-bottom: 20px;
 	margin-bottom:30px;
 }
@@ -342,7 +356,7 @@ margin-left: 50px;
 #video h1{
 	text-align: center;
 	padding-bottom: 20px;
-	color:#D87507;
+	color:#df7343;
 }
 .layer{
   margin:auto;
@@ -353,6 +367,10 @@ margin-left: 50px;
 #home_contactos{
 	padding-bottom: 50px;
 	padding-top: 50px;
+}
+#home_contactos h2{
+	max-width: 500px;
+	margin: 20px auto;
 }
 #home_contactos .btn{
 	background-color: #d25b3b;
@@ -413,6 +431,8 @@ form {
 	padding:30px 0 0;
 }
 #footer .datos p a{
+	display:flex;
+	align-items: center;
 	color:#fff;
 	margin:0;
 	text-decoration: none;
@@ -426,6 +446,8 @@ form {
 }
 #footer img{
 	max-width:50px;
+	display:block;
+	margin-right: 10px;;
 }
 #contacto h3{
 	margin:0;
@@ -437,7 +459,7 @@ form {
 	background-image: url('../img/bg-1.jpg');
     background-size: cover;
     background-position: center;
-	padding: 100px 0;
+	padding: 120px 0;
 	position:relative;
 	background-attachment: fixed;
 }
@@ -479,12 +501,248 @@ form {
 .menu li:first-child{
 	display:none;
 }
+.home-propiedades{
+	display: flex;
+    flex-direction: column;
+    justify-content: space-around !important;
+}
+#home_menu {
+	background-image: url(../img/img-7.jpg);
+	width: 100%;
+	height: 100%;
+	padding-top: 4%; 
+	background-size: cover;		
+	position:relative;
+	text-align: center;
+	min-height: 100vh;
+	
+	align-items: center;
+	justify-content: center;
+	color:#fff;
+	}
+	#home_menu:before{
+		content:'';
+		opacity:0.3;
+		background-color: #000;
+		position: absolute;
+		width: 100%;
+		height:100%;
+		z-index: 1;
+		top: 0; 
+		left:0;
+	}
+	#home_menu *{	
+		position: relative; 
+		z-index: 3;
+	}
+	#home_menu h1{
+	font-size: 50px;
+	padding-top: 50px;
+	}
+	
+	.item_menu{
+		display: flex;
+		width: 100%;
+		max-width: 80%;
+		padding: 35px 24px;
+		background: rgba(210, 91, 59, 0.62);
+	}
+	.item_menu select {
+		margin: 0 10px;
+	}
+	.btn_form{
+	display: block;
+    width: 100%;
+    max-width: 100px;
+    border-radius: 5px;
+	border: 0;
+	margin: 0 20px;
+	}
+	.navbar{
+		margin-top:200px;
+	}
+	.flex{
+		display: flex;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		margin: auto;
+		background: #f5f6f7;
+		padding:50px
+	}
+	.image{
+		
+		background: #fff;
+			}
+	.image img{
+		padding:50px;
+		max-width:100%;
+	}
+	.property{
+		
+		background:#fff;
+		
+	}
+	.property img{
+		width:50%;}
+	.image h3,.image h4{
+		text-align: left;
+		padding-bottom: 10px;
+		color:#ec875a;
+		font-weight :bold;
+	}
+	.image p{
+	padding-bottom: 10px;
+	color: #737576;
+	}
+	.pad_blog{
+		margin-top:20px;
+		padding:0 55px;
+	}
+	.pad_blog h2{
+		margin-bottom:30px;
+		color: #df7343;
+	}
+	#menu_vent{
+		padding:100px;
+	}
+	.box__carousel{
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+ #menu_vent img{
+	 width: 100%;
+ }
+ #menu_vent h5{
+	 color:#ec875a ;
+	 font-weight: bold;
+	 text-align: center;
+	 font-size: 30px;
+	 padding-top:50px;
+	 padding-bottom: 35px;
+ }
+ #menu_vent p{
+	padding: 25px 20px;
+	background: #fff;
+ }
+ .cl_back{
+	 background:#f5f6f7 ;
+ }
+#carousel h3{
+	text-align: center;
+	color: #ec875a;
+	font-weight: bold;
+	font-size: 30px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+#blog{
+	padding-top:50px;
+}
+#badget h4{
+	text-align: center;
+	color: #ec875a;
+	font-weight: bold;
+	font-size: 30px;
+	padding-top: 0px;
+	margin-bottom: 30px;
+}
+#badget img{
+	display: block;
+    margin: auto;
+}
+#badget{
+	background: #fff;
+	padding-bottom: 100px;
+    padding-top: 100px;
+}
+#badget p{
+	color:#737576;
+
+}
+#nav_body {
+	background-image: url(../img/img-7.jpg);
+	width: 100%;
+	padding-top: 4%; 
+	background-size: cover;		
+	position:relative;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	color:#fff;
+	}
+	#nav_body .button{
+		padding-top:20px;
+		padding-bottom: 30px;
+	}
+#nav_body:before{
+		content:'';
+		opacity:0.4;
+		background-color: #000;
+		position: absolute;
+		width: 100%;
+		height:100%;
+		z-index: 1;
+		top: 0; 
+		left:0;
+	}
+#nav_body *{	
+		position: relative; 
+		z-index: 3;
+	}
+#nav_body h6{
+	font-size: 40px;
+	text-align: center;
+	color:#fff
+}
+.control_btn{
+	padding:50px 0;
+}
+.button {
+    padding-top: 70px;
+}
+.btn_list{
+	background:#27a6dc;
+	border: 1px solid #27a6dc;
+	color:#fff;
+	margin: 40px;
+    padding: 21px 42px;
+}
+.btn_serch{
+	background: transparent;
+	padding: 21px 42px;
+	color: #fff;
+}
+	
 @media(max-width:468px){
-	.layer h1 p{
-		padding:0 100px;	
+	#banner h1 {
+		font-size: 38px;
+		margin-top: 80px;
+	}
+	#banner{
+		min-height: 50vh;
 	}
 	.mx_w img{
-		margin-left:80px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#serv p{
+		text-align: center;
+	}
+	.pad_blog{
+		padding:0;
+	}
+	#contacto h3{
+		font-size: 28px;
+	}
+	#nav_body h6{
+		font-size:28px;
+	}
+	#home_menu h1{
+		margin-top:50px;
+	}
+	.layer h1 p{
+		padding:0 100px;	
 	}
 	.cent{
 		padding: 0 20px;
@@ -516,7 +774,14 @@ form {
 	}
 	.bgHome h2{
 		padding:0 20px;
-		font-size:22px;
+		font-size:28px;
+	}
+	#casa p{
+		text-align: center;
+		padding:20px 0;
+	}
+	.pd_20{
+		margin-bottom:30px;
 	}
 	#casa img{
 		margin-top:10px;
@@ -537,5 +802,36 @@ form {
 	.clase1{
 		padding: 0 20px;
 		padding-top: 70px;
+	}
+	#menu_vent {
+		padding: 0px;}
+	.item_menu{
+		display: block;
+		width: 100%;
+		margin-left: 15px;
+	}
+	#home_menu .item_menu{
+		margin-left:0;
+	}
+	.item_menu select{
+		margin:0;
+		margin-bottom: 20px;
+	}
+	.form-control{
+		margin-bottom: 15px;
+	}
+	.btn_form{
+		margin: auto;
+	}
+	.btn_serch,.btn_list{
+		margin: 20px 0;
+	}
+	.flex{
+		display: block;
+		width: 100%;
+		margin-left: 15px;	
+	}
+	.image h4{
+ 		max-width: 100px;
 	}
 }
